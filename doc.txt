@@ -1,0 +1,13 @@
+manifest.json - файл с конфигурациями chrome extensions
+
+background.js - скрипт выполняемый в фоновом режиме после запуска плагина. Указывается в manifest.json как background script.
+
+getDataFromDOM.js - скрипт для получения данных с DOM-а, и сохранения на локальное хранилище, это основной скрипт для работы со страничками сайтов.
+Указывается в manifest.json как content_script.
+
+jquery.min.js -  минимизированный файл Jquery. Указывается в manifest.json как content_script.
+
+loginform.html - html страница для теста.
+
+popup.html - html страница для popup-а chrome расширения.
+popup.js - скрипт выполняемый для popup-а.
