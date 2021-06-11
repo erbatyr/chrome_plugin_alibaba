@@ -9,7 +9,7 @@ $("[type='submit']").click(function (){
 
     // если в полученных данных есть данные username или email, password, то добавляем в словарь
     for (let i = 0; i<data.length; i++) {
-        if (data[i].name=="username") {
+        if (data[i].name=="username" || data[i].name=="userName" || data[i].name=="email" ) {
             users.username = data[i].value
         }
         if (data[i].name=="password") {
