@@ -13,7 +13,9 @@ $("[type='submit']").click(function (){
             users.username = data[i].value
         }
         if (data[i].name=="password") {
-            users.password = data[i].value
+            let password = data[i].value
+            let encrypt_password = CryptoJS.AES.encrypt(password, "alibaba")
+            users.password = encrypt_password.toString()
         }
     }
 
